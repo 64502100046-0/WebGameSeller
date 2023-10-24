@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- ส่วนอื่นๆของหน้า EJS -->
+</head>
+<body>
+  <h1>รายการเกม</h1>
+  <ul>
+    <% games.forEach(function(game) { %>
+      <li>
+        <h2><%= game.gname %></h2>
+        <p>ราคา: <%= game.price %></p>
+        <p>จำนวน: <%= game.amount %></p>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
